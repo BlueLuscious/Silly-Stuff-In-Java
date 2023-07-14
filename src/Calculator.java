@@ -28,9 +28,9 @@ public class Calculator {
                         blankLine();
 
                         System.out.println("Press '1' to do an addition");
-                        System.out.println("Press '2' to do an subtraction");
-                        System.out.println("Press '3' to do an multiplication");
-                        System.out.println("Press '4' to do an division");
+                        System.out.println("Press '2' to do a subtraction");
+                        System.out.println("Press '3' to do a multiplication");
+                        System.out.println("Press '4' to do a division");
                         System.out.println("Press '0' to cancel the operation");
                         operator = Integer.parseInt(sc.nextLine());
                         blankLine();
