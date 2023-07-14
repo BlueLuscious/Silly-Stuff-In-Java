@@ -36,8 +36,10 @@ public class Calculator {
                         blankLine();
 
                         switch (operator) {
-                            case 0 -> System.out.println("Operation cancelled, Darling!\n");
-                            case 1 -> {
+                            case 0:
+                                System.out.println("Operation cancelled, Darling!\n");
+                                break;
+                            case 1: 
                                 System.out.println(addition(num1, num2));
                                 blankLine();
                                 do {
@@ -45,8 +47,8 @@ public class Calculator {
                                     play = Integer.parseInt(sc.nextLine());
                                     blankLine();
                                 } while (play != 1 && play != 2);
-                            }
-                            case 2 -> {
+                                break;
+                            case 2:
                                 System.out.println(subtraction(num1, num2));
                                 blankLine();
                                 do {
@@ -54,8 +56,8 @@ public class Calculator {
                                     play = Integer.parseInt(sc.nextLine());
                                     blankLine();
                                 } while (play != 1 && play != 2);
-                            }
-                            case 3 -> {
+                                break;
+                            case 3:
                                 System.out.println(multiplication(num1, num2));
                                 blankLine();
                                 do {
@@ -63,8 +65,8 @@ public class Calculator {
                                     play = Integer.parseInt(sc.nextLine());
                                     blankLine();
                                 } while (play != 1 && play != 2);
-                            }
-                            case 4 -> {
+                                break;
+                            case 4:
                                 System.out.println(division(num1, num2));
                                 blankLine();
                                 do {
@@ -72,11 +74,11 @@ public class Calculator {
                                     play = Integer.parseInt(sc.nextLine());
                                     blankLine();
                                 } while (play != 1 && play != 2);
-                            }
-                            default -> {
+                                break;
+                            default:
                                 tryAgain();
                                 blankLine();
-                            }
+                                break;
                         }
                     } while (operator == 0 || operator > 4);
             }
@@ -87,6 +89,7 @@ public class Calculator {
                 blankLine();
             }
         } while (play != 2);
+        sc.close();
     }
 
     // operations
